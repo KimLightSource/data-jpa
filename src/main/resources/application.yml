@@ -5,13 +5,13 @@ spring:
     password: sa
     driver-class-name: org.h2.Driver
   jpa:
+    show_sql: false
     hibernate:
       ddl-auto: create
     properties:
      hibernate:
   # show_sql 은 콘솔에 남기기 보다 로그파일로 남기는 것이 사용성 측면에서 더 좋다.
-  # show_sql: true
-        format_sql: true
+        format_sql: false
 logging.level:
   org.hibernate.SQL: debug
 # org.hibernate.type: trace
